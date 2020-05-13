@@ -25,10 +25,4 @@ lira = data.loc[data.loc[:, 'Валюта'] == 'Турецкая лира'][:]
 lira = lira['Курс']
 yena = data.loc[data.loc[:, 'Валюта'] == 'Японских иен'][:]
 yena = yena['Курс']
-# print(funt)
-# print(dollar)
-# print(euro)
-# print(kit)
-# print(frank)
-# print(lira)
-# print(yena)
+
