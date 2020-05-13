@@ -8,9 +8,6 @@ table = html.find("table")
 for tr in table.find_all("tr"):
     data.append([td.get_text().replace(" "," ") for td in tr.find_all("td")])
 data = pd.DataFrame(data[1:], columns=['Цифровой код', "Буквенный код", "Единиц", "Валюта", "Курс"])
-# data = data[['Валюта', 'Курс']]
-# a = data.loc[[10]]
-# print(data.loc[10, 'Курс'])
 funt = data.loc[data.loc[:, 'Валюта'] == 'Фунт стерлингов Соединенного королевства'][:]
 funt = funt['Курс']
 dollar = data.loc[data.loc[:, 'Валюта'] == 'Доллар США'][:]
