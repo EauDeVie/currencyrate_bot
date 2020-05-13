@@ -44,22 +44,3 @@ def query_handler(call):
 bot.infinity_polling()
 
 
-# @bot.message_handler(content_types=['text'])
-# def send_text(message):
-#     if message.text.lower() == 'привет':
-#         bot.send_message(message.chat.id, 'Ещё раз привет!')
-#     elif message.text.lower() == 'пока':
-#         bot.send_message(message.chat.id, 'Пока!')
-
-# @bot.message_handler(commands=['start'])
-# def start_message(message):
-#     keyboard = telebot.types.ReplyKeyboardMarkup(True)
-#     keyboard.row('Привет', 'Пока')
-#     bot.send_message(message.chat.id, 'Привет!', reply_markup=keyboard)
-
-
-# markup.add(telebot.types.InlineKeyboardButton(text='Китайский Юань', callback_data=4))
-# markup.add(telebot.types.InlineKeyboardButton(text='Швейцарский франк', callback_data=5))
-# markup.add(telebot.types.InlineKeyboardButton(text='Турецкая лира', callback_data=6))
-# markup.add(telebot.types.InlineKeyboardButton(text='Японская йена', callback_data=7))
-# bot.send_message(message.chat.id, text="Выберите валюту, по которой хотите узнать текущий курс", reply_markup=markup)
